@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out Our Apps</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> <!-- Importing Roboto Bold -->
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://i.ibb.co/Tcf6qgd/photo-1699891730676-037bed3c1bed.jpg'); /* Background image */
+            background-size: cover;
+            font-family: 'Roboto', sans-serif; /* Use the same font as index */
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 2.5em;
+            color: white;
+        }
+        .button-container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column; /* Arrange buttons vertically */
+            align-items: center; /* Center the buttons */
+        }
+        .button-container a {
+            text-decoration: none;
+            padding: 15px 30px;
+            background-color: #007bff; /* Button color */
+            color: white;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin: 10px 0; /* Adds space between the buttons */
+            width: 200px; /* Set button width for better alignment */
+            transition: background-color 0.3s;
+        }
+        .button-container a:hover {
+            background-color: #0056b3; /* Button hover color */
+        }
+    </style>
+    <script>
+        function showAndroidMessage() {
+            alert("Android Apps are under Development. May be Updated In Future.");
+        }
+    </script>
+</head>
+<body>
+    <h1>Select App Type</h1>
+    <div class="button-container">
+        <a href="webapps.html">Web Apps</a>
+        <a href="#" onclick="showAndroidMessage()">Android Apps</a> <!-- Added onclick to trigger the alert -->
+    </div>
+</body>
+</html>
