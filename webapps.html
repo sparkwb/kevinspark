@@ -8,15 +8,23 @@
     <style>
         body {
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-image: url('https://i.ibb.co/Tcf6qgd/photo-1699891730676-037bed3c1bed.jpg'); /* Background image */
             background-size: cover;
-            font-family: 'Roboto', sans-serif; /* Use the same font as index */
+            font-family: 'Roboto', sans-serif;
             color: white;
             text-align: center;
         }
+        header, footer {
+            background: linear-gradient(90deg, rgba(0, 0, 50, 0.8), rgba(0, 0, 100, 0.8)); /* Black to blue gradient */
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
         h1 {
-            margin-top: 0;
             font-size: 2.5em;
             color: white;
         }
@@ -67,6 +75,16 @@
         .hidden {
             display: none;
         }
+        footer p, footer a {
+            font-size: 0.9em;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
     <script>
         function searchApps() {
@@ -84,9 +102,12 @@
     </script>
 </head>
 <body>
-    <h1>KevinSpark's Web Apps</h1>
 
-    <!-- Search bar added here -->
+    <header>
+        <h1>KevinSpark's Web Apps</h1>
+    </header>
+
+    <!-- Search bar -->
     <input type="text" id="searchBar" placeholder="Search for apps..." onkeyup="searchApps()">
 
     <div class="app-list">
@@ -96,20 +117,23 @@
             <a href="https://kevinspark.netlify.app/mood-analyzer/index.html">Open File Transfer App</a>
         </div>
 
-        <div class="app-list">
-            <div class="app-item">
-                <h2>Mood Analyzer</h2>
-                <p>Helps You to Find Out Your Mood By Answering some Questions.</p>
-                <a href="https://kevinspark.netlify.app/filetransfer">Open Mood Analyzer</a>
-            </div>
+        <div class="app-item">
+            <h2>Mood Analyzer</h2>
+            <p>Helps You to Find Out Your Mood By Answering some Questions.</p>
+            <a href="https://kevinspark.netlify.app/filetransfer">Open Mood Analyzer</a>
+        </div>
 
-            <div class="app-list">
-                <div class="app-item">
-                    <h2>Audio Recorder</h2>
-                    <p>Helps You Record Audio From Device Microphone and Download It</p>
-                    <a href="https://kevinspark.netlify.app/audio-recorder">Open Audio Recorder</a>
-                </div>
-
+        <div class="app-item">
+            <h2>Audio Recorder</h2>
+            <p>Helps You Record Audio From Device Microphone and Download It</p>
+            <a href="https://kevinspark.netlify.app/audio-recorder">Open Audio Recorder</a>
+        </div>
     </div>
+
+    <footer>
+        <p>Made By <a href="https://github.com/sparkwb" target="_blank">SparkWb</a></p>
+        <p>&copy; 2024</p>
+    </footer>
+
 </body>
 </html>
