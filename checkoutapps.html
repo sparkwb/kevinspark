@@ -8,22 +8,29 @@
     <style>
         body {
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-image: url('https://i.ibb.co/Tcf6qgd/photo-1699891730676-037bed3c1bed.jpg'); /* Background image */
             background-size: cover;
-            font-family: 'Roboto', sans-serif; /* Use the same font as index */
+            font-family: 'Roboto', sans-serif;
             color: white;
             text-align: center;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
             height: 100vh;
         }
-        h1 {
-            margin-top: 0;
-            font-size: 2.5em;
+        header, footer {
+            background: linear-gradient(90deg, rgba(0,0,50,0.8), rgba(0,0,100,0.8)); /* Black to blue gradient */
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+            font-weight: bold; /* Bold text */
             color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0;
         }
         .button-container {
             margin-top: 30px;
@@ -34,16 +41,26 @@
         .button-container a {
             text-decoration: none;
             padding: 15px 30px;
-            background-color: #007bff; /* Button color */
+            background-color: #007bff;
             color: white;
             border-radius: 5px;
             font-size: 1.2em;
-            margin: 10px 0; /* Adds space between the buttons */
-            width: 200px; /* Set button width for better alignment */
+            margin: 10px 0;
+            width: 200px;
             transition: background-color 0.3s;
         }
         .button-container a:hover {
-            background-color: #0056b3; /* Button hover color */
+            background-color: #0056b3;
+        }
+        footer p, footer a {
+            font-size: 0.9em;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
     <script>
@@ -53,10 +70,18 @@
     </script>
 </head>
 <body>
-    <h1>Select App Type</h1>
+    <header>
+        <h1>Select App Type</h1>
+    </header>
+
     <div class="button-container">
         <a href="webapps.html">Web Apps</a>
-        <a href="#" onclick="showAndroidMessage()">Android Apps</a> <!-- Added onclick to trigger the alert -->
+        <a href="#" onclick="showAndroidMessage()">Android Apps</a>
     </div>
+
+    <footer>
+        <p>Made By <a href="https://github.com/sparkwb" target="_blank">SparkWb</a></p>
+        <p>&copy; 2024</p>
+    </footer>
 </body>
 </html>
